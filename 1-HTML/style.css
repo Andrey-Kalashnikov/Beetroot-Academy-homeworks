@@ -1,0 +1,48 @@
+body {
+    padding-left: 5%;
+    width: 90%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.flag {
+    width: 10%;
+}
+
+#me {
+    width: 30%;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0px;
+    
+   }
+
+.wrap {
+    margin-top: 5%;
+    white-space: nowrap;
+    padding-left: 4%; 
+    
+}
+
+.inline {
+    display: inline-block;
+    width: 40%;
+}
+
+.grey {
+    color: #808080;
+}
+
+.text {
+    margin: auto 2%;
+}
+
+#agro {
+    padding-left: 2%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
