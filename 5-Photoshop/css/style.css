@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  background-color: #121116;
+}
+
+.wrapper {
+  background-color: #121116;
+  margin: 120px auto;
+}
+
+.logo {
+  width: 112px;
+  height: 36px;
+  margin: 0 auto;
+}
+
+.weAreSocaial {
+  color: #fefbfc;
+  width: 230px;
+  margin: 50px auto 0;
+  padding: 0 0 22px;
+  text-align: center;
+  border-bottom-style: solid;
+  border-width: 1px;
+  border-color: #fefbfc;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  letter-spacing: 0.05em;
+}
+
+.socialLinks {
+  text-align: center;
+  margin: 20px auto;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+  color: #fefbfc;
+  display: inline;
+  margin: auto 15px;
+}
+
+footer {
+  text-align: center;
+  color: #fefbfc;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  margin: 90px auto 0;
+}
+span {
+  color: #19c8fa;
+  font-size: 15px;
+}
