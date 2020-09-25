@@ -21,7 +21,7 @@
   padding: 0 0 22px;
   text-align: center;
   border-bottom-style: solid;
-  border-width: 1px;
+  border-width: 1px solid;
   border-color: #fefbfc;
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
@@ -54,4 +54,8 @@ footer {
 span {
   color: #19c8fa;
   font-size: 15px;
+}
+
+li:hover {
+  color: #19c8fa;
 }

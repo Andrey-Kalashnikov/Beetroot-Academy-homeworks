@@ -56,25 +56,16 @@ li:nth-child(odd) {
   background-color: #88839e;
 }
 
-li:hth-child(even) {
-  background-color: #7a7593;
-}
-
-li :hover {
-  border: turquoise solid;
+li:hover {
+  border: white;
+  border-style: solid none;
+  padding: 5px 0 5px 2%;
+  background-color: #625e77;
 }
 
 input:checked + label {
   text-decoration: line-through;
   color: #a3a0b5;
-}
-
-input :checked {
-  background-color: white;
-}
-
-.custom-checkbox :checked {
-  background-color: white;
 }
 
 footer {
@@ -91,4 +82,33 @@ footer h3 {
 span {
   color: #b7b3b2;
   font-size: 14px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:active {
+  color: aqua;
+}
+
+input[type="checkbox"] {
+  position: absolute;
+  left: -9999px;
+}
+
+input[type="checkbox"] + label:before {
+  content: "";
+  display: inline-block;
+  vertical-align: -5px;
+  width: 25px;
+  height: 25px;
+  background: url(../img/checkbox.png) no-repeat;
+  padding-right: 10px;
+}
+
+input[type="checkbox"]:checked + label:before {
+  background-position: 0 -25px;
+  padding-right: 10px;
 }
