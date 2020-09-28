@@ -4,13 +4,15 @@
 }
 
 .wrapper {
-  margin: 3% 5%;
+  width: 80%;
+  margin: 0 auto;
 }
 
 header {
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   text-align: center;
+  margin-top: 50px;
 }
 
 header > p {
@@ -33,7 +35,7 @@ header > h2 {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-weight: 300;
-  margin: 20px 27% 40px;
+  margin: 20px 20% 40px;
 }
 
 .sectionsWrapper {
@@ -48,8 +50,12 @@ header > h2 {
   text-align: center;
   background-color: #f7f7f7;
   padding: 60px 0;
-  border: 1px solid;
-  border-color: #ececec;
+  border: solid #ececec;
+  border-width: 1px 1px 1px 0px;
+}
+
+#first {
+  border-width: 1px;
 }
 
 .iconWrapper {
@@ -81,8 +87,7 @@ h2 {
   text-align: center;
   color: white;
   padding: 60px 0;
-  border: 1px solid;
-  border-color: #ececec;
+  border: 1px solid #ececec;
 }
 
 .horisontal:hover {

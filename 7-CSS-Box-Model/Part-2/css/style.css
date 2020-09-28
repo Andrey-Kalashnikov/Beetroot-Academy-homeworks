@@ -53,15 +53,13 @@ li {
   text-align: center;
 }
 
-li:hover {
-  opacity: 50%;
+.content {
+  position: relative;
+  top: 20px;
 }
 
-p {
-  position: absolute;
-  display: inline-block;
-  top: 20px;
-  left: 20px;
+li:hover {
+  opacity: 50%;
 }
 
 #lisbon {
