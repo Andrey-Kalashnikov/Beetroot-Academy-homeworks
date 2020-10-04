@@ -27,18 +27,16 @@ p {
     font-size: 17px;
 }
 
-section { 
-    position: absolute;  
-    font-size: 0;     
-    left: 12%;
-    margin-top: -20px;
-        
+section {     
+    font-size: 0;  
+    margin: -20px auto;
+    width: 1050px;        
 }
 
 .content {
     display: inline-block;
     box-sizing: border-box;
-    width: 300px; 
+    width: 320px; 
     margin-left: 30px;    
 }
 
