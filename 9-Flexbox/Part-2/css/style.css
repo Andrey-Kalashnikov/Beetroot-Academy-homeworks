@@ -13,9 +13,7 @@ body {
   max-width: 1600px;
 }
 
-.container-fluid {
-  width: 1120px;
-  height: 1100px;
+.container {
   margin: 90px auto 50px;
 }
 
@@ -24,12 +22,12 @@ body {
   background-color: white;
 }
 
-.text {
+.article_bottom {
   padding-left: 28px;
   padding-right: 15px;
 }
 
-.text > p {
+.article_bottom > p {
   margin: 29px 0 22px 0;
 }
 
