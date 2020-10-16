@@ -81,6 +81,7 @@ header {
 
 .content__top__btn {
   margin-top: auto;
+  cursor: pointer;
 }
 
 .scroll {
