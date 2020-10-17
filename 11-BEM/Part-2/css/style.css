@@ -150,15 +150,6 @@ body {
   list-style: none;
 }
 
-.rating_item {
-  color: #f7bf16;
-  font-size: 17px;
-}
-
-.rating__list li:nth-child(n + 4) {
-  color: #9da1a6;
-}
-
 .product__properties {
   display: flex;
   justify-content: space-between;
