@@ -159,8 +159,15 @@ label > input:checked + img {
 }
 
 main {
+  display: flex;
   width: 1060px;
   height: 751px;
+}
+
+.deco {
+  width: 67px;
+  height: 750px;
+  background-color: white;
 }
 
 .article {
@@ -194,7 +201,7 @@ main {
   display: inline-block;
 }
 
-.article_comment {
+.article__comment {
   font-family: "Georgia";
   font-weight: normal;
   font-style: italic;
