@@ -107,6 +107,13 @@ header {
   color: #fefefe;
 }
 
+.title_input > input::selection {
+  background: #8f8f8f; /* WebKit/Blink Browsers */
+}
+.title_input > input::-moz-selection {
+  background: #8f8f8f; /* Gecko Browsers */
+}
+
 .title_input input {
   width: 100%;
   height: 100%;
