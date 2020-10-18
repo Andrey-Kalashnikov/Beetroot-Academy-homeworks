@@ -123,27 +123,36 @@ header {
 }
 
 .header__fontControl {
-  display: flex;
-  align-items: center;
   width: 812px;
   height: 76px;
   background-color: #f9be2d;
   float: right;
 }
 
+.fontControl_icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  width: 70%;
+  margin-left: 40px;
+}
+
 label > input {
-  /* HIDE RADIO */
+  /* HIDE CHECKBOX */
   visibility: hidden; /* Makes input not-clickable */
   position: absolute; /* Remove input from document flow */
 }
+
 label > input + img {
   /* IMAGE STYLES */
   cursor: pointer;
-  border: 2px solid transparent;
+  opacity: 50%;
 }
+
 label > input:checked + img {
   /* (RADIO CHECKED) IMAGE STYLES */
-  border: 2px solid #f00;
+  opacity: 100%;
 }
 
 .content_wrap {
