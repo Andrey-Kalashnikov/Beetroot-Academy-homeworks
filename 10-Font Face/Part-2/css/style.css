@@ -157,6 +157,10 @@ label > input + img {
   opacity: 50%;
 }
 
+label > input:hover + img {
+  opacity: 100%;
+}
+
 label > input:checked + img {
   /* (RADIO CHECKED) IMAGE STYLES */
   opacity: 100%;
