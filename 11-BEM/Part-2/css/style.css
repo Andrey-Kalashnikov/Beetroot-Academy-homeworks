@@ -228,3 +228,11 @@ select:hover {
 .rate-area > label:active {
   position: relative;
 }
+
+select:focus {
+  outline: none;
+}
+
+input:focus {
+  outline: none;
+}
