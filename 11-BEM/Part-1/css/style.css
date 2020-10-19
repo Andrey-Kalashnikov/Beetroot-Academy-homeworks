@@ -54,6 +54,7 @@ header {
 }
 
 .nav__item {
+  padding-top: 6px;
   border-top: transparent solid 3px;
 }
 
