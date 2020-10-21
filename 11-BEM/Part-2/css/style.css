@@ -1,0 +1,238 @@
+@font-face {
+  font-family: "Museo Sans Rounded";
+  src: local("../font/MuseoSansRounded-300/Museo Sans Rounded 300"),
+    local("../font/MuseoSansRounded-300/Museo-Sans-Rounded-300"),
+    url("../font/MuseoSansRounded-300/MuseoSansRounded-300.woff2")
+      format("woff2"),
+    url("../font/MuseoSansRounded-300/MuseoSansRounded-300.woff") format("woff"),
+    url("../font/MuseoSansRounded-300/MuseoSansRounded-300.ttf")
+      format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.wrap {
+  width: 800px;
+  height: 600px;
+  background-image: url(../img/bg.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin: 0 auto;
+  padding: 109px 53px 100px 63px;
+}
+
+.product {
+  width: 686px;
+  height: 392px;
+  background-color: #111a28;
+  border-radius: 10px;
+}
+
+.logo {
+  width: 65px;
+  height: 33px;
+  margin-top: 21px;
+  margin-left: 24px;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product__block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product__preview {
+  display: flex;
+  flex-direction: column;
+  margin-left: 36px;
+}
+
+.product__img {
+  margin-bottom: 60px;
+}
+
+.product__colorChange {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  margin-bottom: 20px;
+}
+
+.colorChange__list {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70px;
+}
+
+.colorChange_item {
+  width: 10px;
+  height: 10px;
+  border: transparent solid 2px;
+  border-radius: 7px;
+  list-style: none;
+}
+
+.colorChange_item:nth-child(1) {
+  width: 14px;
+  height: 14px;
+  border: solid 2px #7e838b;
+}
+
+.colorChange_item:hover {
+  width: 14px;
+  height: 14px;
+  border: solid 2px #7e838b;
+}
+
+.black {
+  background-color: #1f273f;
+}
+.white {
+  background-color: #ffffff;
+}
+
+.red {
+  background-color: #ed3333;
+}
+
+.other {
+  background-color: #29e3ea;
+}
+
+.product__details {
+  width: 185px;
+  margin-right: 56px;
+  margin-top: -60px;
+}
+
+.product__name {
+  font-size: 24px;
+  color: #e1e1e1;
+  font-family: "Museo Sans Rounded";
+  font-weight: normal;
+  font-style: normal;
+}
+
+.product__description {
+  font-size: 14px;
+  color: #e1e1e1;
+  font-family: "Museo Sans Rounded";
+  font-weight: normal;
+  font-style: normal;
+  margin-top: 10px;
+}
+
+.product__rating {
+  margin: 20px 0;
+}
+
+.rating__list {
+  display: inline-flex;
+  list-style: none;
+}
+
+.product__properties {
+  display: flex;
+  justify-content: space-between;
+  width: 140px;
+}
+
+.product__properties select {
+  display: block;
+  border-radius: 0px;
+  width: 69px;
+  height: 32px;
+  border: solid 1px #4f5560;
+  background-color: #111a28;
+  font-size: 14px;
+  font-family: "Museo Sans Rounded";
+  font-weight: normal;
+  font-style: normal;
+  color: #e1e1e1;
+  text-align-last: center;
+}
+
+select:hover {
+  background-color: #2b3647;
+}
+
+.add_cart_btn {
+  width: 184px;
+  height: 40px;
+  margin-top: 29px;
+  border: solid 1px #4f5560;
+  background-color: #202835;
+  font-size: 14px;
+  font-family: "Museo Sans Rounded";
+  font-weight: normal;
+  font-style: normal;
+  color: #e1e1e1;
+  text-align-last: center;
+}
+
+.add_cart_btn:hover {
+  background-color: #2b3647;
+}
+
+.rating-area {
+  overflow: hidden;
+  width: 75px;
+}
+.rating-area:not(:checked) > input {
+  display: none;
+}
+.rating-area:not(:checked) > label {
+  float: right;
+  width: 15px;
+  padding: 0;
+  cursor: pointer;
+  font-size: 17px;
+  color: #9da1a6;
+}
+.rating-area:not(:checked) > label:before {
+  content: "★";
+}
+.rating-area > input:checked ~ label {
+  color: #f7bf16;
+}
+.rating-area:not(:checked) > label:hover,
+.rating-area:not(:checked) > label:hover ~ label {
+  color: #f7bf16;
+}
+.rating-area > input:checked + label:hover,
+.rating-area > input:checked + label:hover ~ label,
+.rating-area > input:checked ~ label:hover,
+.rating-area > input:checked ~ label:hover ~ label,
+.rating-area > label:hover ~ input:checked ~ label {
+  color: #f7bf16;
+}
+.rate-area > label:active {
+  position: relative;
+}
+
+select:focus {
+  outline: none;
+}
+
+input:focus {
+  outline: none;
+}
