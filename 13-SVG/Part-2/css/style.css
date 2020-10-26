@@ -8,6 +8,7 @@ html,
 body {
   width: 100%;
   height: 100%;
+  font-family: "Lato", sans-serif;
 }
 
 h1,
@@ -56,6 +57,7 @@ p {
 .header__text h1 {
   font-size: 54px;
   letter-spacing: 0.16em;
+  font-weight: 700;
 }
 
 .header__text p {
@@ -263,6 +265,7 @@ svg {
   color: #ffffff;
   font-size: 34px;
   letter-spacing: 0.16em;
+  font-weight: 700;
 }
 
 .link_topworkz {
