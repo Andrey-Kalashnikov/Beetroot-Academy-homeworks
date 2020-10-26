@@ -1,0 +1,377 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+h1,
+h2,
+p {
+  font-family: "Lato", sans-serif;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 1920px;
+  height: 1072px;
+  background: url(../img/hero-bg.png) no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.header__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 50%;
+}
+
+.header__logo {
+  width: 70px;
+  height: 70px;
+}
+
+.header__logo img {
+  width: 100%;
+}
+
+.header__text {
+  width: 72%;
+  margin-top: 50px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.header__text h1 {
+  font-size: 54px;
+  letter-spacing: 0.16em;
+}
+
+.header__text p {
+  margin-top: 30px;
+  font-size: 15px;
+  letter-spacing: 0.06rem;
+  line-height: 29px;
+  text-transform: uppercase;
+}
+
+.header__scrol {
+  margin-bottom: -70px;
+}
+
+svg {
+  position: relative;
+  top: -51px;
+}
+
+.eboutUs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1920px;
+  height: 631px;
+}
+
+.eboutUs__content {
+  width: 60%;
+  height: 60%;
+  border: solid 2px #3c3c3c;
+  border-top: 0;
+}
+
+.eboutUs__content::before {
+  display: block;
+  content: "EBOUT US";
+  background-color: white;
+  font-weight: 700;
+  width: 420px;
+  font-size: 34px;
+  letter-spacing: 0.16em;
+  color: #3c3c3c;
+  position: relative;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.content__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 80%;
+  text-align: center;
+}
+
+.content__text p {
+  font-size: 16px;
+  color: #3c3c3c;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.content__text p:nth-child(2) {
+  margin-top: 25px;
+}
+
+.services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1920px;
+  height: 488px;
+  background: url(../img/services_bg.png) no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.services__content {
+  width: 60%;
+  height: 60%;
+  border: solid 2px #3c3c3c;
+  border-top: 0;
+}
+
+.services__content::before {
+  display: block;
+  content: "SERVICES";
+  background-color: transparent;
+  font-weight: 700;
+  width: 420px;
+  font-size: 34px;
+  letter-spacing: 0.16em;
+  color: #3c3c3c;
+  position: relative;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.whatWeDo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1920px;
+  height: 1415px;
+}
+
+.whatWeDo__content {
+  width: 60%;
+  height: 80%;
+  border: solid 2px #3c3c3c;
+  border-top: 0;
+}
+
+.whatWeDo__content::before {
+  display: block;
+  content: "WHAT WE DO";
+  background-color: white;
+  font-weight: 700;
+  width: 420px;
+  font-size: 34px;
+  letter-spacing: 0.16em;
+  color: #3c3c3c;
+  position: relative;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.text__img {
+  width: 70px;
+  height: 70px;
+}
+
+.text__img img {
+  width: 100%;
+}
+
+.content__text h2 {
+  font-size: 20px;
+  color: #3c3c3c;
+  margin: 40px 0 36px 0;
+  line-height: 0;
+}
+
+.whatWeDo__content > .content__text {
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.whatWeDo__content > .content__text > .text_wrap ~ p {
+  font-size: 14px;
+  color: #3c3c3c;
+  font-weight: 400;
+  line-height: 1.85;
+}
+
+.text_wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.links {
+  width: 1920px;
+  height: 484px;
+}
+
+.links___container {
+  height: 100%;
+}
+.linksContainer__row .col {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.linksContainer__row {
+  height: 50%;
+}
+
+.link__image {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.link__image a {
+  width: 100%;
+  height: 100%;
+}
+
+.link__image a:hover {
+  text-decoration: none;
+}
+
+.link__image p {
+  position: relative;
+  top: 70%;
+  left: 5%;
+  color: #ffffff;
+  font-size: 34px;
+  letter-spacing: 0.16em;
+}
+
+.link_topworkz {
+  background: url(../img/topworkz.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.link_joint {
+  background: url(../img/joint.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.link_market {
+  background: url(../img/market.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.link_worktop {
+  background: url(../img/worktop.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.link_lable {
+  background: url(../img/lable.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.link_kyiv {
+  background: url(../img/kyiv.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 1920px;
+  height: 600px;
+}
+
+.footer__content {
+  width: 60%;
+  height: 50%;
+  border: solid 2px #3c3c3c;
+  border-top: 0;
+  margin-top: 130px;
+}
+
+.footer__content::before {
+  display: block;
+  content: "CONTACT US";
+  background-color: white;
+  font-weight: 700;
+  width: 420px;
+  font-size: 34px;
+  letter-spacing: 0.16em;
+  color: #3c3c3c;
+  position: relative;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.footer_btn {
+  width: 395px;
+  height: 65px;
+  border: none;
+  background-color: #3c3c3c;
+  color: #ffffff;
+  font-size: 16px;
+  letter-spacing: 0.16em;
+  margin-top: 20px;
+}
+
+.footer_btn:focus {
+  outline: none;
+}
+
+.footer__logo {
+  width: 70px;
+  height: 70px;
+}
+
+.footer__logo img {
+  width: 100%;
+}
+
+.footer__copyright {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.footer__copyright p {
+  margin: 0;
+  font-size: 14px;
+  color: #3c3c3c;
+}
