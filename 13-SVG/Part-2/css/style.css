@@ -72,11 +72,7 @@ p {
 
 svg {
   position: relative;
-<<<<<<< HEAD
   top: -51px;
-=======
-  top: -50px;
->>>>>>> 077edfe10bb7f72eb88b6aa553ddb25ed8a7a758
 }
 
 .eboutUs {
@@ -104,11 +100,7 @@ svg {
   letter-spacing: 0.16em;
   color: #3c3c3c;
   position: relative;
-<<<<<<< HEAD
   top: -25px;
-=======
-  top: -22px;
->>>>>>> 077edfe10bb7f72eb88b6aa553ddb25ed8a7a758
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
@@ -120,10 +112,6 @@ svg {
   align-items: center;
   height: 80%;
   text-align: center;
-<<<<<<< HEAD
-=======
-  margin-top: 10px;
->>>>>>> 077edfe10bb7f72eb88b6aa553ddb25ed8a7a758
 }
 
 .content__text p {
@@ -165,11 +153,7 @@ svg {
   letter-spacing: 0.16em;
   color: #3c3c3c;
   position: relative;
-<<<<<<< HEAD
   top: -25px;
-=======
-  top: -22px;
->>>>>>> 077edfe10bb7f72eb88b6aa553ddb25ed8a7a758
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
@@ -200,11 +184,7 @@ svg {
   letter-spacing: 0.16em;
   color: #3c3c3c;
   position: relative;
-<<<<<<< HEAD
   top: -25px;
-=======
-  top: -22px;
->>>>>>> 077edfe10bb7f72eb88b6aa553ddb25ed8a7a758
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
@@ -228,10 +208,7 @@ svg {
 
 .whatWeDo__content > .content__text {
   justify-content: space-between;
-<<<<<<< HEAD
   margin-top: 30px;
-=======
->>>>>>> 077edfe10bb7f72eb88b6aa553ddb25ed8a7a758
 }
 
 .whatWeDo__content > .content__text > .text_wrap ~ p {
@@ -357,11 +334,7 @@ svg {
   letter-spacing: 0.16em;
   color: #3c3c3c;
   position: relative;
-<<<<<<< HEAD
   top: -25px;
-=======
-  top: -22px;
->>>>>>> 077edfe10bb7f72eb88b6aa553ddb25ed8a7a758
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
