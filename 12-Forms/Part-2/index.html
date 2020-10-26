@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <title>Andrey Kalashnikov</title>
+</head>
+<body>
+    <div class="wrap">
+        <div class="modal">
+            <div class="modal__tabs">
+                <input type="radio" id="tab_1" name="tab_panel" checked>
+                <label for="tab_1">Sign in</label>                       
+                <input type="radio" id="tab_2" name="tab_panel">
+                <label for="tab_2">Joun us</label>
+                <div class="tabs__content">
+                    <div class="sign_in_form">
+                        <form action="" method="GET">
+                            <div class="user_name">
+                                <div><label for="name">Username</label></div>
+                                <input class="form__input" type="text" id="name" name="name" minlength="3">
+                                <div class="form__error">error</div>                    
+                            </div>
+                            <div class="password">
+                                <div><label for="password">Password</label></div>
+                                <input class="form__input" type="password" id="password" name="password" minlength="6">
+                                <div class="form__error">error</div>                     
+                            </div>
+                            <div class="keep_signed_in">
+                                <input type="checkbox" id="keep_signed_in" checked>
+                                <label for="keep_signed_in">Keep me signed in</label>
+                            </div>
+                            <div class="btn">
+                                <input type="submit" value="Sign in">
+                            </div>
+                        </form>                
+                    </div>
+                    <div class="join_form">
+                        <form action="" method="GET">
+                            <div class="user_email">
+                                <div><label for="user_email">email</label></div>
+                                <input class="form__input" type="email" id="name" name="user_email">
+                                <div class="form__error">error</div>                    
+                            </div>
+                            <div class="password">
+                                <div><label for="password">Password</label></div>
+                                <input class="form__input" type="password" id="password" name="password" minlength="6">
+                                <div class="form__error">error</div>                    
+                            </div>
+                            <div class="confirm_password">
+                                <div><label for="confirm_password">Confirm password</label></div>
+                                <input class="form__input" type="password" id="confirm_password" name="confirm_password" minlength="6">
+                                <div class="form__error">error</div>                    
+                            </div>
+                            <div class="btn">
+                                <input type="submit" value="Join us">
+                            </div>
+                        </form>                
+                    </div>
+                    <div class="links">
+                        <div><a href="#"><p>Forgot password</p></a></div>
+                        <div><a href="#"><p>Create an account</p></a></div>
+                    </div>
+                </div>
+            </div>     
+        </div>        
+    </div>
+</body>
+</html>
