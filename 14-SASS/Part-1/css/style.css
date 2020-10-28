@@ -149,6 +149,7 @@ p {
 .unitBlock__unitDiscription h2 {
     font-size: 1.88vw;
     margin-bottom: 20px;
+    color: #666666;
 }
 
 .unitBlock__unitDiscription h2::after {
@@ -165,10 +166,17 @@ p {
 .unitBlock__unitDiscription h3 {
     font-size: 1.25vw;
     margin-bottom: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    color: #666666;
 }
 
 .unitBlock__unitDiscription p {
+    font-family: 'Raleway', sans-serif;    
     font-size: 0.72vw;
+    font-weight: 500;
+    line-height: 1.25vw;
+    color: #333333;
     text-align: center;
 }
 
@@ -192,7 +200,7 @@ p {
     
 }
 
-.socialLinks__item p{
+.socialLinks__item p {
     font-size: 0.7vw;
     text-align: center;
     color: #cccccc;
@@ -204,20 +212,27 @@ p {
     margin-bottom: 20px;
 }
 
-.unitBlock__unitDiscription svg line{
+.unitBlock__unitDiscription svg line {
     stroke: #ffcc00;
 }
 
-.unitBlock__unitDiscriptionBtn{
+.unitBlock__unitDiscriptionBtn {
     max-width: 140px;
     max-height: 24px;
     width: 7.29vw;
     height: 1.24vw;
+    font-family: 'Open Sans', sans-serif;
     font-size: 0.73vw;
+    font-weight: 700;
     border: solid 1px #ffcc00;
     background-color: white;
-    margin-top: 20px;
+    margin-top: 20px;    
 }
+
+.unitBlock__unitDiscriptionBtn:focus {
+    outline: solid 2px #ffcc00;
+}
+
 
 /* Bootstrap changes */
 
