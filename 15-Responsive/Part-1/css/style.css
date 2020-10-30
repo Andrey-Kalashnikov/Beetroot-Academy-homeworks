@@ -1,0 +1,419 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrap_top {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  max-width: 1500px;
+  width: 100%;
+  height: 50vw;
+  background-image: url(../img/background.png);
+  background-size: cover;
+  padding: 0px 10vw;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 10.3vw;  
+}
+
+.logo img {
+  width: 100%;
+}
+
+.nav__list {
+  display: inline-flex;
+  justify-content: space-between;
+  list-style: none;
+  width: 37.33vw;
+}
+
+.nav__link {
+  text-decoration: none;
+  font-size: 1.07vw;
+  color: #262626;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+
+.nav__item {
+  padding-top: 6px;
+  border-top: transparent solid 3px;
+}
+
+.nav__item:hover {
+  border-top: #ff6033 solid 3px;
+}
+
+.content__text {
+  display: flex;
+  flex-direction: column;
+  width: 24.67vw;
+  height: 16.67vw;
+}
+
+.content__top {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3.33vw;
+  width: 370px;
+  height: 250px;
+}
+
+.content__top h1 {
+  font-size: 4vw;
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  color: #262626;
+}
+
+.content__top p {
+  font-size: 1.13vw;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  color: #262626;
+  line-height: 1.8vw;
+  padding-top: 0.5vw;
+}
+
+.content__top__btn {
+  width: 13.87vw;
+  height: 4.2vw;
+  margin-top: auto;
+  cursor: pointer;
+  position: relative;
+  left: -4px;
+}
+
+
+.content__top__btn img {
+  width: 100%;
+}
+
+.scroll {
+  width: 1.6vw;
+  height: 2.67vw;
+  align-self: center;
+}
+
+.scroll img {
+  width: 100%;
+}
+
+.blog {
+  max-width: 1500px;
+  width: 100%;
+  height: 50vw;
+}
+
+.blog__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #00b1b1;
+  padding: 0 9%;
+  height: 100%;
+}
+
+.blog__img {
+  display: flex;
+  align-items: center;
+  width: 43.33vw;
+}
+
+.blog__img img{
+width: 100%;
+}
+
+
+.blog__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 34vw;
+  height: calc(34vw/1.5);
+  color: #ffffff;
+}
+
+.blog__text h1 {
+  font-size: 6vw;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+
+.blog__text p {
+  font-size: 1.13vw;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  line-height: 1.8vw;
+  margin-top: 20px;
+}
+
+
+.services {
+  display: flex;
+  max-width: 1500px;
+  width: 100%;
+  height: 50vw;
+  background-color: #70bfff;
+  font-family: "Raleway", sans-serif;
+}
+
+.services__list {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding: 10% 5% 10% 0;
+}
+
+.decor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+
+.services__item {
+  display: flex;
+  width: 26.67vw;
+  height: 6.67vw;
+  background-color: white;
+  box-shadow: 0 4px 5px 2px #44749b;
+}
+.services__item:hover {
+  box-shadow: 0 6px 7px 4px #45769e;
+  
+}
+
+.service_ico p {
+  font-size: 3.33vw;
+  align-items: center;
+}
+
+.service_ico {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+}
+
+.service_description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5% 0 5%;
+  width: 75%;
+  font-size: 1.33vw;
+  text-align: center;
+  border-right: solid 1px #9d9d9d;
+}
+
+.decor__tomat {
+  width: 37.27vw;
+  height: 42.8vw;
+  background: url(../img/tomato.png) no-repeat;
+  background-size: 100% ;
+  background-size: cover;
+}
+
+.decor__tomat::before {
+  content: "Our Services";
+  position: relative;
+  font-size: 6vw;
+  color: white;
+  top: 50%;
+  left: 0;
+  line-height: 0;
+}
+
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1500px;
+  width: 100%;
+  height: 50vw;
+  background: url(../img/bg-2.png);
+}
+
+.contacts_block {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-top: 3.33vw;
+}
+
+.contacts__article {
+  width: 25%;
+}
+
+h2 {
+  font-size: 6vw;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  color: #262626;
+  text-align: center;
+  line-height: 0.75em;
+  margin: 3.33vw 0 3.0vw 0;
+}
+
+h3 {
+  font-size: 1.13vw;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  color: #262626;
+}
+
+.address__block div p {
+  font-size: 1.33vw;
+  margin-top: 0.33vw;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #262626;
+}
+
+.contacts__article p {
+  font-size: 1.13vw;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  color: #262626;
+  text-align: center;
+}
+
+.form__block,
+.address__block {
+  width: 40%;
+}
+
+.form__block {
+  position: relative;
+}
+
+.form input {
+  width: 33.33vw;
+  height: 3.33vw;
+  background-color: #00c4c4;
+  opacity: 50%;
+  padding-left: 15px;
+  border: none;
+}
+
+.form textarea {
+  width: 33.33vw;
+  background-color: #00c4c4;
+  opacity: 50%;
+  padding: 15px 0 0 15px;
+  border: none;
+
+}
+
+.form input:focus,
+.form textarea:focus {
+  opacity: 100%;
+  border: none;
+  border-left: solid 5px #355b82;
+  outline: none;
+}
+
+input + div label {
+  position: relative;
+  z-index: 1;
+  top: -35px;
+  left: 15px;
+  font-size: 15px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+form .form__item:last-of-type > div label {
+  position: relative;
+  z-index: 1;
+  top: -155px;
+  left: 15px;
+  font-size: 15px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+.form input:focus + div,
+input:valid + div,
+.form textarea:focus + div,
+textarea:valid + div {
+  transform: translateY(-33px);
+  transition: 0.5s;
+  
+}
+
+input:valid + div label {
+  color: #262626;
+}
+
+.form input:focus + div label,
+.form textarea:focus + div label {
+  transition: 0.5s;
+  color: #262626;
+  font-weight: 700;
+}
+
+.address__block div {
+  margin-top: 10px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1500px;
+  width: 100%;
+  height: 6vw;
+  background-color: #262626;
+}
+
+.footer__logo {
+  display: flex;
+  width: 4.27vw;  
+}
+
+.footer__logo img{
+  width: 100%;
+}
+
+footer p {
+  font-size: 1vw;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+footer p span {
+  color: #ff2b58;
+}
