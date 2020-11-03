@@ -1,123 +1,160 @@
-// =========== General button styles & variables =======================================//
-button{
-    display:inline-block;
-    margin: 0 1em;
-    border:none;
-    background:none;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+}
+
+.menu {
+  width: 50%;
+  text-transform: uppercase;
+  position: relative;  
+
+  .burger{
+    display: none;
+  }
+
+  .burger_container{
+    position: relative;
+    width: 25px;
+    height: 4px;
+    background-color: black;    
+  }
+
+  .burger_container:after,
+  .burger_container:before{
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 100%;      
+    background-color: black;      
+    }
+
+  .burger_container:before{
+    top: 8px;
+  }
+
+  .burger_container:after{
+    bottom: 8px;
+  }
+     
+  /*.menu_list{
+    margin: 20px 0;
+  }*/
+
     
-    span{
-      display:block;
-    }
+}
+
+.menu_list{
+  color: black;
+  justify-self: flex-end;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;      
+  list-style: none;
+  text-decoration: none;
+}
+
+
+@media screen and (min-width:769px) {
+  
+  .burger{
+    display: none;
+  }
+  .burger_name{
+    display: none;
+  }
+}
+
+@media screen and (max-width:768px) {
+  
+  .menu{    
+    margin-right: 30px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    
+  }
+
+  .menu_link {
+    visibility: hidden;
+    font-size: 14px;
+  }
+     
+  .burger:not(:checked) + label{
+    margin-top: 30px;
+    float: right;
+    
   }
   
-  $color : #ecf0f1;
-  $transition: .3s;// increase this to see the transformations happen in slow motion
-  
-  
-  
-  
-  
-  /* ====================== lines button ==================================================*/
-  
-  $button-size : 4rem; 
-  //common to all three-liners
-  .lines-button {
-    padding: $button-size/2 $button-size/4;
-    transition: .3s;
-    cursor: pointer;
-    user-select: none;
-    border-radius: $button-size/7;
-  /* */
-    &:hover {
-      opacity: 1;
-    }
-    &:active {
-      transition: 0;
-    }
+  .burger{
+    visibility: hidden;
   }
-  //common to all three-liners
-  @mixin line {
-    display: inline-block;
-    width: $button-size;
-    height: $button-size/7;
-    background: $color;
-    border-radius: $button-size/14; 
-    transition: $transition;
+
+  .menu_list{       
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;         
   }
-  //common to all three-liners
-  .lines {
-    @include line;
-    position: relative; 
-  
-    &:before, &:after {
-     @include line;
-      position: absolute;
-      left:0;
-      content: '';
-      -webkit-transform-origin: $button-size/14 center;
-              transform-origin: $button-size/14 center;
-    }
-    &:before { 
-      top: $button-size/4; 
-    }
-    &:after { 
-      top: -$button-size/4; 
-    }
+
+  .burger:checked + .burger_name > .burger_container {
+    background-color: white;
+  }
+
+  .burger:checked + .burger_name > .burger_container:after{
+    transform:rotateZ(45deg);
+    background-color: black;
+    top: 1px;
+    transition: .6s;
+  }
+
+  .burger:checked + .burger_name > .burger_container:before{
+    transform:rotateZ(-45deg);
+    background-color:black;
+    top: 1px;
+    transition: .6s;
+  }
+
+  .burger:checked + .burger_name{
+    margin-top: 30px;
+    float: right;
+    
+  }
+   
+  .burger:checked ~ .menu_list > .menu_link{
+    color: black; 
+    transform: translateY(30px);      
+    transition: 1s;
+    visibility: visible;          
   }
   
-  //common to all three-liners
-  .lines-button:hover {
-    .lines {
-      &:before { 
-        top: $button-size/3.5; 
-      }
-      &:after { 
-        top: -$button-size/3.5; 
-      }
-    }
+  .burger:checked ~ .bg_check{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-color: black;
+    z-index: -1;
   }
-  .lines-button.close {
-    -webkit-transform: scale3d(.8,.8,.8);
-            transform: scale3d(.8,.8,.8);
-  }
-  // for both the arrow up and left icons
-  .lines-button.arrow.close {
-      .lines {
-        &:before,
-        &:after {
-          top: 0;
-          width: $button-size/1.8;
-        }
-        &:before { 
-          -webkit-transform: rotate3d(0,0,1,40deg); 
-                  transform: rotate3d(0,0,1,40deg); 
-        }
-        &:after { 
-          -webkit-transform: rotate3d(0,0,1,-40deg); 
-                  transform: rotate3d(0,0,1,-40deg); 
-        }
-      }
-  }
-  
-  
-  //three-lines to x
-  .lines-button.x.close{
-    .lines {
-      background: transparent;
-      &:before, &:after{
-        -webkit-transform-origin: 50% 50%;
-                transform-origin: 50% 50%;
-        top:0;
-        width: $button-size;
-      }
-      &:before{
-        -webkit-transform: rotate3d(0,0,1,45deg); 
-                transform: rotate3d(0,0,1,45deg); 
-      }
-      &:after{
-        -webkit-transform: rotate3d(0,0,1,-45deg); 
-                transform: rotate3d(0,0,1,-45deg); 
-      }
-    }
-  }
-  
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
