@@ -168,7 +168,7 @@ width: 100%;
   font-family: "Raleway", sans-serif;
   font-weight: 300;
   line-height: 1.8vw;
-  margin-top: 20px;
+  margin-top: 20px;  
 }
 
 
@@ -176,7 +176,6 @@ width: 100%;
   display: flex;
   max-width: 1500px;
   width: 100%;
-  height: 50vw;
   background-color: #70bfff;
   font-family: "Raleway", sans-serif;
 }
@@ -196,7 +195,6 @@ width: 100%;
   justify-content: center;
   align-items: center;
   width: 50%;
-  height: 100%;
 }
 
 .services__item {
@@ -205,6 +203,7 @@ width: 100%;
   height: 6.67vw;
   background-color: white;
   box-shadow: 0 4px 5px 2px #44749b;
+  margin-bottom: 10px;
 }
 .services__item:hover {
   box-shadow: 0 6px 7px 4px #45769e;
@@ -214,6 +213,7 @@ width: 100%;
 .service_ico p {
   font-size: 3.33vw;
   align-items: center;
+  margin-bottom: 0;
 }
 
 .service_ico {
@@ -234,6 +234,10 @@ width: 100%;
   border-right: solid 1px #9d9d9d;
 }
 
+.service_description p {
+  margin-bottom: 0;
+}
+
 .decor__tomat {
   width: 37.27vw;
   height: 42.8vw;
@@ -246,6 +250,7 @@ width: 100%;
   content: "Our Services";
   position: relative;
   font-size: 6vw;
+  font-weight: 700;
   color: white;
   top: 50%;
   left: 0;
