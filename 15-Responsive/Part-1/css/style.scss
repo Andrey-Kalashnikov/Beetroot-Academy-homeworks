@@ -36,13 +36,8 @@
 
   .burger_container:after{
     bottom: 8px;
-  }
+  }     
      
-  /*.menu_list{
-    margin: 20px 0;
-  }*/
-
-    
 }
 
 .menu_list{
@@ -78,8 +73,7 @@
   }
 
   .menu_link {
-    visibility: hidden;
-    font-size: 14px;
+    visibility: hidden;    
   }
      
   .burger:not(:checked) + label{
@@ -138,6 +132,7 @@
   }
 
 }
+
 
 
 

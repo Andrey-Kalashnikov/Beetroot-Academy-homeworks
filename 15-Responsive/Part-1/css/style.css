@@ -433,5 +433,45 @@ footer p span {
   list-style: none;    
 }
 
+ 
+.img_1 {
+  background-image: url(../img/img_1.png);
+  background-size: cover;
+  padding-top: 47.6%;
+  height: 100%;
+}
 
+.img_2 {
+  background-image: url(../img/img_2.png);
+  background-size: cover;
+  padding-top: 71.43%;
+  flex-basis: 30%;  
+}
+
+.img_3 {
+  background-image: url(../img/img_3.png);
+  background-size: cover;
+  padding-top: 71.43%;
+}
+
+.img_4 {
+  background-image: url(../img/img_4.png);
+  background-size: cover;
+  padding-top: 71.17%;
+  height: 100%;
+}
+
+.img_5 {
+  background-image: url(../img/img_5.png);
+  background-size: cover;
+  padding-top: 71.17%;
+}
+
+
+@media screen and (max-width: 600px) { 
+
+  a.nav__link {
+    font-size: 14px;    
+  }
+}
 
