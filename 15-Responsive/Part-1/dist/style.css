@@ -55,11 +55,8 @@
 }
 @media screen and (max-width: 768px) {
   .menu {
-    margin-right: 30px;
-    position: -webkit-sticky;
-    position: sticky;
+    position: relative;
     top: 20px;
-    right: 20px;
   }
 
   .menu_link {
@@ -172,6 +169,10 @@
   .blog__content {
     padding: 0 6%;
   }
+  .blog__content .blog__img img {
+    width: 40vw;
+    height: 40vw;
+  }
   .blog__content .blog__text {
     margin-top: 20px;
     width: 70vw;
@@ -184,7 +185,7 @@
   }
   .blog__content .blog__text p {
     font-size: 2.26vw;
-    line-height: normal;
+    line-height: 3vw;
     margin-bottom: 0;
   }
 
