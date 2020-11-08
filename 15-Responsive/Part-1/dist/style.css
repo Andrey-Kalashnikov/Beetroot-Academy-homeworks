@@ -9,7 +9,6 @@
   text-transform: uppercase;
   position: relative;
 }
-
 .menu .burger {
   display: none;
 }
@@ -57,7 +56,8 @@
 @media screen and (max-width: 768px) {
   .menu {
     margin-right: 30px;
-    position: absolute;
+    position: -webkit-sticky;
+    position: sticky;
     top: 20px;
     right: 20px;
   }
@@ -169,6 +169,25 @@
 }
 
 @media screen and (max-width: 576px) {
+  .blog__content {
+    padding: 0 6%;
+  }
+  .blog__content .blog__text {
+    margin-top: 20px;
+    width: 70vw;
+    padding: 0 15px;
+    margin-bottom: 20px;
+  }
+  .blog__content .blog__text h1 {
+    font-size: 9vw;
+    margin-bottom: 0;
+  }
+  .blog__content .blog__text p {
+    font-size: 2.26vw;
+    line-height: normal;
+    margin-bottom: 0;
+  }
+
   .services {
     flex-direction: column-reverse;
     align-items: center;
@@ -191,6 +210,15 @@
   }
   .services .decor {
     margin-top: 20px;
+  }
+  .services .decor .decor__tomat::before {
+    content: "Our Services";
+    position: relative;
+    display: block;
+    width: 200%;
+    font-size: 9vw;
+    top: 50%;
+    left: -20%;
   }
 
   .gallery .gallery__text {
