@@ -54,11 +54,13 @@ header {
 }
 
 .nav__item {
+  text-decoration: none;
   padding-top: 6px;
   border-top: transparent solid 3px;
 }
 
 .nav__item:hover {
+  text-decoration: none;
   border-top: #ff6033 solid 3px;
 }
 

@@ -44,6 +44,26 @@
   text-decoration: none;
 }
 
+.content_btn {
+  width: 200px;
+  height: 55px;
+  font-family: "Raleway", sans-serif;
+  background-color: #ff6033;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 30px 0 50px 0;
+  box-shadow: 0px 5px 5px #595959;
+}
+.content_btn p {
+  font-size: 17px;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  margin: 0;
+}
+
 @media screen and (min-width: 769px) {
   .burger {
     display: none;
@@ -79,7 +99,7 @@
   }
 
   .burger:checked + .burger_name > .burger_container {
-    background-color: white;
+    background-color: transparent;
   }
 
   .burger:checked + .burger_name > .burger_container:after {
@@ -160,12 +180,40 @@
   font-size: 17px;
   color: white;
   font-family: "Raleway", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   text-align: center;
   margin: 0;
 }
 
 @media screen and (max-width: 576px) {
+  header {
+    margin-top: 40px;
+  }
+  header .logo {
+    width: 15vw;
+  }
+
+  .menu {
+    position: fixed;
+    right: 20px;
+  }
+
+  .content__top {
+    margin: 21px 0;
+  }
+  .content__top .content__text {
+    width: 50vw;
+  }
+  .content__top .content__text h1 {
+    font-size: 9vw;
+    margin-bottom: 0;
+  }
+  .content__top .content__text p {
+    font-size: 2.26vw;
+    line-height: 3vw;
+    margin-bottom: 0;
+  }
+
   .blog__content {
     padding: 0 6%;
   }
@@ -247,5 +295,48 @@
 
   .img_5 {
     padding-top: 70%;
+  }
+
+  .contacts .contacts__article {
+    width: 50%;
+  }
+  .contacts .contacts__article h1 {
+    font-size: 12vw;
+  }
+  .contacts .contacts__article p {
+    font-size: 2.26vw;
+    line-height: normal;
+  }
+
+  input + div label {
+    top: -25px;
+  }
+
+  form .form__item:last-of-type > div label {
+    top: -260px;
+  }
+
+  .form input:focus + div,
+input:valid + div,
+.form textarea:focus + div,
+textarea:valid + div {
+    transform: translateY(-27px);
+    transition: 0.5s;
+  }
+
+  h3 {
+    font-size: 2.26vw;
+  }
+
+  .address__block div p {
+    font-size: 2.66vw;
+  }
+
+  .footer__block p {
+    font-size: 1.8vw;
+  }
+
+  .footer__logo {
+    width: 7vw;
   }
 }
