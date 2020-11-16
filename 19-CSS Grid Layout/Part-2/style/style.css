@@ -1,7 +1,8 @@
 .container__item:nth-child(1)::before {
     content: '';
     display: block;
-    background-image: url(../img/mask1.png) cover;
+    background-image: url(../img/mask1.png);
+    background-size: cover;
     position: absolute;
     z-index: 1;
     top: 0;
@@ -12,7 +13,8 @@
 .container__item:nth-child(1)::after {
     content: '';
     display: block;
-    background-image: url(../img/mask2.png) cover;
+    background-image: url(../img/mask2.png);
+    background-size: cover;
     position: absolute;
     z-index: 1;
     top: 0;
