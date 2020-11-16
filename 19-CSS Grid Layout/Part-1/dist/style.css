@@ -55,6 +55,6 @@ img {
   background: black;
   opacity: 0.7;
 }
-.wrap .bottom .grid_item:before:hover {
-  opacity: 1;
+.wrap .bottom .grid_item:hover:before {
+  opacity: 0;
 }

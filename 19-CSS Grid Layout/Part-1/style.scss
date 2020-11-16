@@ -62,8 +62,8 @@ img {
             opacity: 0.7;
         }
 
-        .grid_item:before:hover {
-            opacity: 1;
+        .grid_item:hover:before {
+            opacity: 0;
         }
         
     }
