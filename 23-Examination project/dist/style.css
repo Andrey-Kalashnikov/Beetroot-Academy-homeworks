@@ -1,0 +1,531 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Myriad Pro Regular";
+  src: url("../font/MyriadProRegular/MyriadPro-Regular.eot");
+  src: url("../font/MyriadProRegular/MyriadPro-Regular.eot?#iefix") format("embedded-opentype"), url("../font/MyriadProRegular/MyriadPro-Regular.woff") format("woff"), url("../font/MyriadProRegular/MyriadPro-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.wrap {
+  width: 100%;
+  padding: 0.833vw;
+}
+.wrap .header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 41.111vw;
+  font-family: "Josefin Sans", sans-serif;
+  background-image: url(../img/bg_header.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.wrap .header .header__content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wrap .header .header__content .content__text {
+  margin-top: 12.5vw;
+  color: #ffffff;
+  text-align: center;
+}
+.wrap .header .header__content .content__text h1 {
+  text-transform: uppercase;
+  font-size: 2.667vw;
+  letter-spacing: 0.267vw;
+  font-weight: 700;
+  margin: 0;
+}
+.wrap .header .header__content .content__text p {
+  font-size: 1.222vw;
+  letter-spacing: 0.379vw;
+  font-weight: 400;
+}
+.wrap .header .header__content .header__search__form {
+  margin-top: 2.778vw;
+}
+.wrap .header .header__content .header__search__form form input {
+  width: 27.778vw;
+  height: 3.333vw;
+  border: solid 1px #ffffff;
+  outline-color: #5474fd;
+  text-align: center;
+}
+.wrap .header .header__content .header__search__form form input::placeholder {
+  color: #999999;
+  text-align: center;
+  font-size: 0.778vw;
+  letter-spacing: 0.156vw;
+}
+.wrap .header .header__content .header__search__form form input:focus {
+  color: #5474fd;
+}
+.wrap .header .header__content .header__search__form form .check {
+  flex-basis: 70%;
+  text-align: center;
+  margin-top: 1vw;
+  font-size: 1.222vw;
+  letter-spacing: 0.156vw;
+  visibility: hidden;
+}
+.wrap .header .header__content .header__search__form form input:invalid ~ .check {
+  visibility: visible;
+  color: #fff;
+}
+.wrap .header .header__content .header__search__form form button {
+  width: 8.333vw;
+  height: 3.333vw;
+  border: solid 1px #ffffff;
+  border-radius: 0;
+  font-family: "Aleo", serif;
+  font-size: 0.778vw;
+  letter-spacing: 0.078vw;
+  color: #fff;
+  background-color: #5474fd;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  float: right;
+}
+.wrap .header .header__content .header__search__form form button img {
+  width: 1.111vw;
+  height: 1.115vw;
+  margin-left: 0.833vw;
+  margin-right: 0.944vw;
+}
+.wrap nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 4.444vw;
+  background-color: #5474fd;
+  padding: 0 18.333vw;
+}
+.wrap nav .nav__logo {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.333vw;
+  letter-spacing: 0.133vw;
+  font-weight: 700;
+  color: #fff;
+}
+.wrap nav ul.nav__list {
+  display: flex;
+  line-height: 0;
+}
+.wrap nav ul.nav__list .nav__list__item {
+  display: inline-block;
+  font-family: "Aleo", serif;
+  font-size: 0.778vw;
+  font-weight: 400;
+  margin-left: 2.333vw;
+}
+.wrap nav ul.nav__list .nav__list__item a {
+  text-decoration: none;
+  color: #fff;
+}
+.wrap .WhyChooseUs {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 38.056vw;
+  background-image: url(../img/bg_WhyChooseUs.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0 18.333vw;
+  font-family: "Aleo", serif;
+}
+.wrap .WhyChooseUs .content__text {
+  width: 30vw;
+  color: #ffffff;
+}
+.wrap .WhyChooseUs .content__text h2 {
+  margin-top: 11vw;
+  font-size: 2vw;
+  font-weight: 400;
+}
+.wrap .WhyChooseUs .content__text p {
+  margin-top: 2.5vw;
+  font-size: 0.889vw;
+  font-family: "Josefin Sans", sans-serif;
+  color: #e8e8e8;
+  line-height: 1.444vw;
+  letter-spacing: 0.089vw;
+  font-weight: 400;
+}
+.wrap .WhyChooseUs .content__text button {
+  width: 12.5vw;
+  height: 3.333vw;
+  background-color: #5474fd;
+  border: none;
+  font-size: 0.889vw;
+  letter-spacing: 0.067vw;
+  color: #fff;
+  margin-top: 2.667vw;
+}
+.wrap .WhyChooseUs .content__img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30vw;
+}
+.wrap .WhyChooseUs .content__img .content__img__item {
+  width: 19.444vw;
+  height: 12.222vw;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.wrap .WhyChooseUs .content__img .content__img__item:nth-child(1) {
+  background-image: url(../img/WhyChooseUs_1.png);
+  margin-left: 3.611vw;
+}
+.wrap .WhyChooseUs .content__img .content__img__item:nth-child(2) {
+  background-image: url(../img/WhyChooseUs_2.png);
+  align-self: flex-end;
+  margin-top: 0.278vw;
+}
+.wrap .steps {
+  width: 100%;
+  height: 18.667vw;
+  background-color: #333333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.wrap .steps .steps__item:nth-child(2) {
+  margin: 0 10.778vw;
+}
+.wrap .steps .steps__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wrap .steps .steps__item .steps__img {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  width: 5.333vw;
+  height: 5.333vw;
+  border-radius: 2.666vw;
+  background-color: #333333;
+}
+.wrap .steps .steps__item .steps__img img {
+  width: 3.389vw;
+  height: 3.389vw;
+}
+.wrap .steps .steps__item h3 {
+  font-family: "Myriad Pro Regular";
+  font-size: 2vw;
+  color: #e8e8e8;
+  font-weight: normal;
+}
+.wrap .steps svg {
+  position: absolute;
+  top: 2.5vw;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.wrap .searchResults {
+  width: 100%;
+  height: 77.778vw;
+}
+.wrap .searchResults .result {
+  width: 100%;
+  height: 50%;
+  padding: 0 18.333vw;
+  display: flex;
+}
+.wrap .searchResults .result .result__content {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  height: 20.611vw;
+  background-color: #232323;
+  opacity: 0.9;
+  color: #e8e8e8;
+  padding: 2.833vw 2.778vw 1.667vw;
+  font-family: "Myriad Pro Regular";
+  margin-top: 12.722vw;
+}
+.wrap .searchResults .result .result__content p.country {
+  font-size: 1.111vw;
+  font-weight: normal;
+  letter-spacing: 0.083vw;
+}
+.wrap .searchResults .result .result__content h4 {
+  font-size: 1.111vw;
+  text-transform: uppercase;
+  margin-top: 1.778vw;
+  font-weight: normal;
+  line-height: 1vw;
+}
+.wrap .searchResults .result .result__content p.description {
+  font-size: 0.889vw;
+  line-height: 1.444vw;
+  margin-top: 1.722vw;
+}
+.wrap .searchResults .result .result__content button {
+  width: 14.167vw;
+  height: 3.333vw;
+  margin-top: auto;
+  border-radius: 0;
+  border: 0;
+  background-color: #5474fd;
+  font-family: "Aleo", serif;
+  font-size: 0.889vw;
+  letter-spacing: 0.067vw;
+  color: #fff;
+}
+.wrap .searchResults .result:nth-child(1) {
+  background-image: url(../img/bd_result_1.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.wrap .searchResults .result:nth-child(2) {
+  background-image: url(../img/bd_result_2.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-direction: row-reverse;
+}
+.wrap .WhatOurTouristSay {
+  background-image: url(../img/bg_WhatOurTouristSay.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-direction: row-reverse;
+  width: 100%;
+  height: 40.611vw;
+  padding: 0 18.333vw;
+  display: flex;
+  flex-direction: column;
+}
+.wrap .WhatOurTouristSay h2 {
+  font-family: "Aleo", serif;
+  font-size: 2vw;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 6.667vw;
+  color: #fff;
+}
+.wrap .WhatOurTouristSay .fitBack {
+  height: 15.778vw;
+  margin-top: 5vw;
+  display: flex;
+}
+.wrap .WhatOurTouristSay .fitBack .fitBack__img {
+  background-image: url(../img/fitback_img.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 24.722vw;
+  height: 100%;
+}
+.wrap .WhatOurTouristSay .fitBack .fitBack_text {
+  width: 36.944vw;
+  padding: 2.778vw 0 0 3.333vw;
+}
+.wrap .WhatOurTouristSay .fitBack .fitBack_text p:first-child {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.111vw;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #e8e8e8;
+}
+.wrap .WhatOurTouristSay .fitBack .fitBack_text p:last-child {
+  font-family: "Myriad Pro Regular";
+  font-size: 0.889vw;
+  line-height: 1.444vw;
+  margin-top: 1.5vw;
+  color: #e8e8e8;
+}
+.wrap .WhatOurTouristSay .fitBack .fitBack_text p:last-child:before {
+  content: "“";
+  position: relative;
+  top: 0.35em;
+  left: -0.05em;
+  font-family: sans-serif;
+  font-size: 2.778vw;
+  color: #5474fd;
+}
+.wrap .footer {
+  display: flex;
+  justify-content: center;
+  height: 14.889vw;
+  background-color: #232323;
+  text-align: center;
+  padding-top: 6.667vw;
+  color: #fff;
+}
+.wrap .footer .footer__content p:nth-child(1) {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.333vw;
+  font-weight: 700;
+  letter-spacing: 0.187vw;
+}
+.wrap .footer .footer__content p:nth-child(2) {
+  margin-top: 0.578vw;
+  font-size: 0.889vw;
+  font-family: "Myriad Pro Regular";
+  font-weight: normal;
+}
+.wrap .footer .footer__content ul {
+  margin-top: 1.311vw;
+}
+.wrap .footer .footer__content ul li {
+  display: inline-block;
+  list-style: none;
+  margin-left: 1.333vw;
+}
+.wrap .footer .footer__content ul li a {
+  font-size: 0.889vw;
+  color: #fff;
+}
+.wrap .footer .footer__content ul li:nth-child(1) {
+  margin: 0;
+}
+.wrap .footer .footer__content ul li:nth-child(3) a {
+  color: #5474fd;
+}
+
+@media screen and (max-width: 1024px) {
+  .wrap .header .header__content .content__text h1 {
+    font-size: 4.667vw;
+  }
+  .wrap .header .header__content .content__text p {
+    font-size: 2.5vw;
+  }
+  .wrap .header .header__content .header__search__form form input {
+    width: 50vw;
+    height: 5vw;
+  }
+  .wrap .header .header__content .header__search__form form input::placeholder {
+    font-size: 1.778vw;
+    letter-spacing: 0.3vw;
+  }
+  .wrap nav {
+    padding: 0 5vw;
+  }
+  .wrap nav .nav__logo {
+    font-size: 2.5vw;
+  }
+  .wrap nav ul.nav__list .nav__list__item {
+    font-size: 1.778vw;
+  }
+  .wrap .WhyChooseUs {
+    padding: 0 5vw;
+  }
+  .wrap .WhyChooseUs .content__text {
+    width: 40vw;
+  }
+  .wrap .WhyChooseUs .content__text h2 {
+    margin-top: 5vw;
+    font-size: 3vw;
+  }
+  .wrap .WhyChooseUs .content__text p {
+    font-size: 1.5vw;
+    letter-spacing: 0.18vw;
+    line-height: 1.2;
+  }
+  .wrap .WhyChooseUs .content__text button {
+    font-size: 1vw;
+    width: 12.5vw;
+    height: 4.5vw;
+  }
+  .wrap .WhyChooseUs .content__img {
+    width: 40vw;
+  }
+  .wrap .WhyChooseUs .content__img .content__img__item {
+    width: 25.277vw;
+    height: 15.888vw;
+  }
+  .wrap .WhyChooseUs .content__img .content__img__item:nth-child(2) {
+    margin-top: 1.278vw;
+  }
+  .wrap .searchResults .result {
+    padding: 0 5vw;
+  }
+  .wrap .searchResults .result .result__content {
+    width: 60vw;
+    height: 30vw;
+    margin-top: 5vw;
+  }
+  .wrap .searchResults .result .result__content p.country {
+    font-size: 3vw;
+  }
+  .wrap .searchResults .result .result__content h4 {
+    font-size: 3vw;
+    margin-top: 2.778vw;
+  }
+  .wrap .searchResults .result .result__content p.description {
+    font-size: 1.5vw;
+    line-height: 1.2;
+    margin-top: 2.722vw;
+  }
+  .wrap .WhatOurTouristSay {
+    padding: 0 5vw;
+    align-items: center;
+  }
+  .wrap .WhatOurTouristSay h2 {
+    font-size: 3vw;
+    margin-top: 3vw;
+  }
+  .wrap .WhatOurTouristSay .fitBack {
+    height: 23.67vw;
+    margin-top: 5vw;
+  }
+  .wrap .WhatOurTouristSay .fitBack .fitBack__img {
+    width: 37.08vw;
+    height: 100%;
+  }
+  .wrap .WhatOurTouristSay .fitBack .fitBack_text p:first-child {
+    font-size: 2.1vw;
+  }
+  .wrap .WhatOurTouristSay .fitBack .fitBack_text p:last-child {
+    font-size: 1.5vw;
+    line-height: 1.444vw;
+    margin-top: 1.5vw;
+  }
+  .wrap .WhatOurTouristSay .fitBack .fitBack_text p:last-child:before {
+    top: 0.35em;
+    left: -0.05em;
+    font-size: 5vw;
+  }
+  .wrap .footer {
+    padding-top: 2.5vw;
+  }
+  .wrap .footer .footer__content p:nth-child(1) {
+    font-size: 2vw;
+    letter-spacing: 0.187vw;
+  }
+  .wrap .footer .footer__content p:nth-child(2) {
+    font-size: 1.6vw;
+  }
+  .wrap .footer .footer__content ul {
+    margin-top: 2vw;
+  }
+  .wrap .footer .footer__content ul li a {
+    font-size: 3vw;
+  }
+}
