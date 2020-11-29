@@ -1,0 +1,155 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+}
+
+.menu {
+  width: 50%;
+  text-transform: uppercase;
+  position: relative;  
+
+  .burger{
+    display: none;
+  }
+
+  .burger_container{
+    position: relative;
+    width: 25px;
+    height: 4px;
+    background-color: black;    
+  }
+
+  .burger_container:after,
+  .burger_container:before{
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 100%;      
+    background-color: black;      
+    }
+
+  .burger_container:before{
+    top: 8px;
+  }
+
+  .burger_container:after{
+    bottom: 8px;
+  }     
+     
+}
+
+.menu_list{
+  color: black;
+  justify-self: flex-end;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;      
+  list-style: none;
+  text-decoration: none;
+}
+
+
+@media screen and (min-width:769px) {
+  
+  .burger{
+    display: none;
+  }
+  .burger_name{
+    display: none;
+  }
+}
+
+@media screen and (max-width:768px) {
+  
+  .menu{    
+    margin-right: 30px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    
+  }
+
+  .menu_link {
+    visibility: hidden;    
+  }
+     
+  .burger:not(:checked) + label{
+    margin-top: 30px;
+    float: right;
+    
+  }
+  
+  .burger{
+    visibility: hidden;
+  }
+
+  .menu_list{       
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;         
+  }
+
+  .burger:checked + .burger_name > .burger_container {
+    background-color: white;
+  }
+
+  .burger:checked + .burger_name > .burger_container:after{
+    transform:rotateZ(45deg);
+    background-color: black;
+    top: 1px;
+    transition: .6s;
+  }
+
+  .burger:checked + .burger_name > .burger_container:before{
+    transform:rotateZ(-45deg);
+    background-color:black;
+    top: 1px;
+    transition: .6s;
+  }
+
+  .burger:checked + .burger_name{
+    margin-top: 30px;
+    float: right;
+    
+  }
+   
+  .burger:checked ~ .menu_list > .menu_link{
+    color: black; 
+    transform: translateY(30px);      
+    transition: 1s;
+    visibility: visible;          
+  }
+  
+  .burger:checked ~ .bg_check{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-color: black;
+    z-index: -1;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
