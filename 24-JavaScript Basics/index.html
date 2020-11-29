@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        /*Запросите у пользователя его имя и выведите в ответ: «Привет, его имя!».*/
+
+         let userName = prompt(`Привет пользователь! Меня зовут JS. А как твоё имя?`);
+         alert(`Привет, ${userName}!`);
+        /*-------------------------------------------------------------------------*/
+
+        
+        /*Запросите у пользователя год его рождения, посчитайте, сколько ему лет и выведите результат.
+        Текущий год укажите в коде как константу.*/
+
+         const userBirthYear = prompt(`${userName}, в каком году ты родился?`);
+         let date = new Date(); 
+         let currentYear = date.getFullYear();
+         let userCurrentAge = currentYear - userBirthYear;
+         alert(`Значит тебе ${userCurrentAge}.`);
+        /*-------------------------------------------------------------------------*/
+
+        
+        /*Запросите у пользователя длину стороны квадрата и выведите периметр такого квадрата.*/
+
+         let squareSide = prompt(`${userName}, назови длину стороны квадрата, а я посчитаю его периметр.`);
+         let squarePerimeter = squareSide * 4;
+         alert(`Длина периметра квадрата составляет ${squarePerimeter} единиц.`);
+        /*-------------------------------------------------------------------------*/
+        
+
+        /*Запросите у пользователя радиус окружности и выведите площадь такой окружности.*/
+
+         let circleRadius = prompt(`${userName}, назови радиус окружности, а я посчитаю её площадь.`);
+         const PI = 3.14;
+         let circleArea = PI * (circleRadius ** 2);
+         alert(`Площадь окружности составляет ${circleArea} единиц.`);
+        /*-------------------------------------------------------------------------*/
+
+        /*Запросите у пользователя расстояние в км между двумя городами и за сколько часов он хочет добраться.
+        Посчитайте скорость, с которой необходимо двигаться, чтобы успеть вовремя.*/
+
+         let travelDistanse = prompt(`${userName}, сколько километров между городами?`);
+         let travelTimHours = prompt(`${userName}, за сколько часов ты хочешь добраться?`);
+         let travelSpeed =  travelDistanse / travelTimHours;
+         alert(`Скорость движения, должна составить ${travelSpeed} км/ч.`);
+        /*-------------------------------------------------------------------------*/
+
+        
+        /*Реализуйте конвертор валют. Пользователь вводит доллары, программа переводит в евро. Курс валюты храните в константе*/
+        
+         const USDEUR = 0.84;
+         let usdQuantity = prompt(`${userName}, сколько USD необходимо обменять?`);
+         let usdToEur = usdQuantity * USDEUR;
+         alert(`За ${usdQuantity}USD, по текущему курсу ${USDEUR}, будет получено ${usdToEur}EUR`);
+        /*-------------------------------------------------------------------------*/
+
+
+        /*Пользователь указывает объем флешки в Гб. Программа должна посчитать,
+        сколько файлов размером в 820 Мб помещается на флешку.*/
+
+         const MBINGB = 1000;
+         const FILESIZE = 840;
+         let GbFlashSpace = prompt(`${userName}, какой объем памяти носителя в Gb?`);
+         let MbFlashSpace = GbFlashSpace * MBINGB;
+         let filesFit = MbFlashSpace / FILESIZE;
+         let filesFitClear = Math.floor(filesFit);
+         alert(`Носитель может вместить ${filesFitClear} файлов, обьемом ${FILESIZE}Mb.`);
+        /*-------------------------------------------------------------------------*/
+
+
+        /*Пользователь вводит сумму денег в кошельке и цену одной шоколадки.
+         Программа выводит, сколько шоколадок может купить пользователь, и сколько сдачи у него останется.*/
+
+         let amountInWallet = prompt(`${userName}, сколько ты готов потратить на шоколад?`);
+         let chocolateCost = prompt(`${userName}, сколько стоит шоколад?`);
+         let chocolateAmount = Math.trunc((amountInWallet / chocolateCost));
+         let moneyChange = amountInWallet - chocolateAmount * chocolateCost;
+         alert(`На сумму ${amountInWallet} можно купить ${chocolateAmount} шоколадок. Сдачи останется ${moneyChange}.`);
+        /*-------------------------------------------------------------------------*/
+
+
+        /*Запросите у пользователя трехзначное число и выведите его задом наперед.
+          Для решения задачи вам понадобится оператор % (остаток от деления).*/
+
+         let xyz = prompt (`Введи трёхзначное число`);
+         let z = (xyz % 100) % 10;
+         let y = ((xyz % 100) - z) / 10;
+         let x = (xyz - (y * 10 + z)) / 100;
+         alert(`${z}${y}${x}`);
+        /*-------------------------------------------------------------------------*/  
+
+
+        /*Пользователь вводит сумму вклада в банк на 2 месяца, с процентной ставкой депозита 5% годовых.
+          Вывести сумму начисленных процентов.*/
+
+         const PERCENTYEAR = 5;         
+         let userDeposit = Number(prompt(`${userName}, сумма депозита?`));
+         let depositTerm = Number(prompt(`${userName}, на сколько месяцев размещаем депозит?`));
+         let userPercent = (PERCENTYEAR / 12) * depositTerm;
+         let userDepositPercent = userDeposit / 100 * userPercent;
+         let userDepositTotal = userDeposit + userDepositPercent;
+         let userDepositPercentClear = userDepositPercent.toFixed(2);
+         let userDepositTotalClear = userDepositTotal.toFixed(2);        
+         alert(`Процент по вкладу в размере ${userDeposit} сроком на ${depositTerm} составит ${userDepositPercentClear}% или ${userDepositTotalClear}денег.`); 
+        /*-------------------------------------------------------------------------*/
+
+        
+        /*Работа с переменными
+        важность: 2
+        1.	Объявите две переменные: admin и name.
+        2.	Запишите строку "Джон" в переменную name.
+        3.	Скопируйте значение из переменной name в admin.
+        4.	Выведите на экран значение admin, используя функцию alert (должна показать «Джон»).*/
+
+        let admin;
+        let name;
+        name = prompt("Имя админа?", `Джон`)
+        admin = name;
+        alert(`Имя админа ${admin}!!!`);
+        /*-------------------------------------------------------------------------*/
+
+
+        /*Исправьте сложение
+        Ниже приведён код, который запрашивает у пользователя два числа и показывает их сумму.
+        Он работает неправильно. Код в примере выводит 12 (для значения полей по умолчанию).
+        В чём ошибка? Исправьте её. Результат должен быть 3.
+        let a = prompt("Первое число?", 1);
+        let b = prompt("Второе число?", 2);
+        alert(a + b); // 12*/
+
+        let a = prompt("Первое число?", 1);
+        let b = prompt("Второе число?", 2);
+        alert(+a + +b);
+        /*-------------------------------------------------------------------------*/
+
+
+        /*Шаблонные строки
+        важность: 5
+        Что выведет этот скрипт?
+        let name = "Ilya";
+        alert( `hello ${1}` ); // ?
+        alert( `hello ${"name"}` ); // ?
+        alert( `hello ${name}` ); // ?
+        */
+        
+        /*Обратные кавычки позволяют вставить выражение внутри ${...} в строку.* 
+        ! name = nameIlya !/
+
+        let nameIlya = "Ilya";
+        alert( `hello ${1}` ); // hello 1
+        alert( `hello ${"nameIlya"}` ); // hello nameIlya
+        alert( `hello ${nameIlya}` ); // hello Ilya
+        /*-------------------------------------------------------------------------*/
+
+    </script>
+
+</body>
+</html>
